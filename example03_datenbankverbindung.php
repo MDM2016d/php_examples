@@ -29,7 +29,7 @@
     }
   ?>
 
-  <h2>Variante 1</h2>
+  <h2>Klassenliste</h2>
   <table border="1">
     <tr>
       <th>id</th>
@@ -61,41 +61,6 @@
       }
     ?>
   </table>
-
-
-  <h2>Variante 2</h2>
-  <table border="1">
-    <tr>
-      <th>id</th>
-      <th>Vorname</th>
-      <th>Name</th>
-      <th>Strasse</th>
-      <th>Nummer</th>
-      <th>PLZ</th>
-    </tr>
-    <?php
-      $result = mysqli_query($db, "SELECT * FROM persons;");
-      if ($result) {
-        while ($person = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-          // Bspw.:
-          // $person = ['id' => 1, 'Name' => 'Muster', 'Vorname' => 'Mark', 'Strasse' => 'Random', 'Nummer' => 13, PLZ => 3000]
-          echo ('<tr>');
-            echo ('<td>' . $person['id'] .        '</td>');
-            echo ('<td>' . $person['vorname'] .   '</td>');
-            echo ('<td>' . $person['name'] .      '</td>');
-            echo ('<td>' . $person['strasse'] .   '</td>');
-            echo ('<td>' . $person['nummer'] .    '</td>');
-            echo ('<td>' . $person['PLZ'] .       '</td>');
-          echo ('</tr>');
-        }
-      } else {
-        echo ("NO DATA!");
-      }
-      // Wichtig: am Ende muss die Datenbankverbindung wieder geschlossen werden!
-      mysqli_close($db);
-    ?>
-  </table>
-
 
 </body>
 

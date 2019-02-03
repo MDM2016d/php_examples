@@ -14,7 +14,9 @@
       foreach($namen as $name) {
         // in $name ist das aktuelle ELement des Arrays $namen gespeichert.
         // Also zuerst 'Aaron', dann 'David',...
-        echo('<li>' . $name . '</li>');
+        ?>
+        <li> <?php echo($name); ?></li>
+        <?php
       }
     ?>
   </ul>
@@ -41,14 +43,15 @@
         // 1. Durchlauf: $person = ['name' => 'Muster', 'vorname' => 'Mark']
         // 2. Durchlauf: $person = ['name' => 'Smith', 'vorname' => 'Eleonore']
         // 3. Durchlauf: $person = ['name' => 'Einstein', 'vorname' => 'Albert']
-        echo('<tr>');
-          echo('<td>' . $person['name'] .'</td>');
-          echo('<td>' . $person['vorname'] .'</td>');
-        echo('</tr>');
+        ?>
+        <tr>
+          <td><?php echo($personen['name']); ?></td>
+          <td><?php echo($personen['name']); ?></td>
+        </tr>
+        <?php
       }
     ?>
   </table>
-
 
 </body>
 
