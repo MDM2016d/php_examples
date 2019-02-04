@@ -20,7 +20,6 @@
     <br>
     <input type="submit" name="Speichern">
   </form>
-  <!-- <?php echo($_GET['name']) ?> -->
 </body>
 
 </html>
