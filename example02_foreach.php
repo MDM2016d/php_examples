@@ -10,7 +10,7 @@
   <h2>Klassenliste</h2>
   <ul>
     <?php
-    $namen = ["Aaron", "David", "Elia", "Eliane", "Fabienne", "Fabio", "Felix", "Florian", "Florin", "Jan", "Janis", "Jona", "Julian", "Kerstin", "Marco", "Nick", "Nicolas"];
+    $namen = ["Aaron", "David", "Elia", "Eliane", "Fabienne", "Fabio", "Felix", "Florian", "Florin", "Jan", "Jona", "Julian", "Kerstin", "Marco", "Nick", "Nicolas"];
     foreach ($namen as $name) {
         // in $name ist das aktuelle ELement des Arrays $namen gespeichert.
         // Also zuerst 'Aaron', dann 'David',...
