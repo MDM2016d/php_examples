@@ -6,3 +6,4 @@
 * [02 `foreach`](./example02_foreach.php) Iterieren über Arrays
 * [03 Datenbankverbindung `MySQLi`](./example03_datenbankverbindung.php) Eine Verbindung zu einem MySQL Server herstellen
 * [04 POST](./example04_post/) hinzufügen eines Datensatzes zur Datenbank
+* [05 Funktionen in separaten Files](./example05_function_in_file/) Funktionen aus anderen Files verfügbar machen und verwenden.
