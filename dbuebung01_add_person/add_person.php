@@ -17,6 +17,19 @@ $sql = "INSERT INTO persons (name, vorname, strasse, nummer, PLZ)
           $plz
         );";
 
+/** wenn das array direkt verwendet wird, müssen die verschiedenen Textteile mit einem '.' verbunden werden:
+ * 
+  $sql = "INSERT INTO persons (name, vorname, strasse, nummer, PLZ) "
+  . "VALUES ("
+  . "'" . $_POST['name'] . "', "
+  . "'" . $_POST['vorname'] . "', "
+  . "'" . $_POST['strasse'] . "', "
+  . $_POST['nummer'] . ", "
+  . $_POST['PLZ']
+  . ");";
+ * 
+ */
+
 mysqli_query($db, $sql);
   
 header('Location: ' . 'index.php');
