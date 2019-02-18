@@ -8,16 +8,16 @@ $strasse = $_POST['strasse'];
 $nummer = $_POST['nummer'];
 $plz = $_POST['PLZ'];
 
-$sql = "INSERT INTO persons (name, vorname, strasse, nummer, PLZ) "
-  . "VALUES ("
-  . "'" . $name . "', "
-  . "'" . $vorname . "', "
-  . "'" . $strasse . "', "
-  . $nummer . ", "
-  . $plz
-  . ");";
+$sql = "INSERT INTO persons (name, vorname, strasse, nummer, PLZ)
+        VALUES (
+          '$name',
+          '$vorname',
+          '$strasse',
+          $nummer,
+          $plz
+        );";
 
-  mysqli_query($db, $sql);
+mysqli_query($db, $sql);
   
-  header('Location: ' . 'index.php');
+header('Location: ' . 'index.php');
 ?>
